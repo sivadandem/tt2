@@ -50,10 +50,6 @@ class BookNewTrip extends Component {
         {value => {
           const {addTripList} = value
 
-          // -----------------------------------------
-          // REMOVED WRONG MAIN HEADING FROM HERE
-          // -----------------------------------------
-
           const renderYourDetailsForm = () => {
             const {
               yourDetailsNameErrorMsg,
@@ -66,11 +62,11 @@ class BookNewTrip extends Component {
 
             return (
               <>
-                {/* DO NOT PUT main heading here */}
                 <form
                   onSubmit={event => event.preventDefault()}
                   className="your-details-container"
                 >
+                  <h1 className="main-heading">Travel Trip</h1>
                   <h1 className="your-details-heading">Your Details</h1>
                   <p className="your-details-description">
                     Enter your name and location details
