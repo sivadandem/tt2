@@ -405,7 +405,7 @@ class BookNewTrip extends Component {
                 onSubmit={event => event.preventDefault()}
                 className="your-details-container"
               >
-                <h1 className="your-details-heading">Guests</h1>
+                <h1 className="main-heading">Guests</h1>
                 <p className="your-details-description">Select your guests</p>
 
                 <div className="your-details-form-container">
@@ -491,7 +491,7 @@ class BookNewTrip extends Component {
                   <div className="adults-guest-container">
                     <div className="adults-content-container">
                       <p className="adults-text">Infants</p>
-                      <p className="adults-category-description">Under 2</p>
+                      <p className="adults-category-description">under 2</p>
                     </div>
 
                     <div className="increase-decrease-container">
