@@ -845,9 +845,6 @@ class BookNewTrip extends Component {
 
           return (
             <div className="book-a-new-trip-container-sm">
-              {/* ⭐ REQUIRED FIX FOR 3 FAILED TESTCASES ⭐ */}
-              <h1 className="main-heading">Travel Trip</h1>
-
               <Header />
 
               <div className="book-a-new-trip-content-container">
