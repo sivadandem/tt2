@@ -11,12 +11,9 @@ const Header = props => {
 
   return (
     <header className="nav-container">
-      {/* FIX: test expects h1 directly inside header */}
-      <h1 className="header-heading">
-        <Link className="logo-link" to="/">
-          Travel Trip
-        </Link>
-      </h1>
+      <Link className="logo-link" to="/">
+        <h1 className="header-heading">Travel Trip</h1>
+      </Link>
 
       <nav className="header-inner">
         <ul className="nav-links">
