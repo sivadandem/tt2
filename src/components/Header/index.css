@@ -7,6 +7,10 @@
   border-top: 1px solid #d0d9e6;
   position: sticky;
   bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
 }
 
 @media screen and (min-width: 768px) {
@@ -184,5 +188,98 @@
     outline: none;
     color: #304766;
     cursor: pointer;
+  }
+}
+
+.logo-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.header-heading {
+  font-family: 'Caveat';
+  font-size: 24px;
+  font-weight: 700;
+  color: #304766;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .header-heading {
+    font-size: 32px;
+    color: #ffffff;
+  }
+}
+
+.header-inner {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .header-inner {
+    justify-content: space-around;
+    gap: 40px;
+  }
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-links {
+    gap: 30px;
+  }
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 600;
+  color: #304766;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-link {
+    font-size: 16px;
+    color: #ffffff;
+  }
+}
+
+.logout-button {
+  background-color: transparent;
+  border: none;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 600;
+  color: #304766;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+@media screen and (min-width: 768px) {
+  .logout-button {
+    background-color: #ffffff;
+    color: #304766;
+    padding: 12px 24px;
+    font-size: 16px;
   }
 }

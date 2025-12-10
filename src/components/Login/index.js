@@ -70,8 +70,13 @@ class Login extends Component {
     if (jwtToken !== undefined) {
       return <Redirect to="/" />
     }
-    const {username, password, isSuccessError, errorMsg, isShowPassword} =
-      this.state
+    const {
+      username,
+      password,
+      isSuccessError,
+      errorMsg,
+      isShowPassword,
+    } = this.state
     const inputType = isShowPassword ? 'text' : 'password'
     return (
       <div className="login-container">

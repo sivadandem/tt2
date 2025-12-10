@@ -212,11 +212,6 @@ class BookNewTrip extends Component {
                     <button
                       type="button"
                       onClick={() => {
-                        const {
-                          yourDetailsName,
-                          yourDetailsStartLocation,
-                          yourDetailsEndLocation,
-                        } = this.state
                         if (yourDetailsName === '') {
                           this.setState({yourDetailsNameErrorMsg: true})
                         } else if (yourDetailsStartLocation === '') {
@@ -368,7 +363,6 @@ class BookNewTrip extends Component {
                     <button
                       type="button"
                       onClick={() => {
-                        const {startDateInput, endDateInput} = this.state
                         const valid = startDateInput < endDateInput
 
                         if (startDateInput === '') {
@@ -561,8 +555,10 @@ class BookNewTrip extends Component {
           }
 
           const renderTravelAssistanceForm = () => {
-            const {isTravelAssitanceCheckboxChecked, selectedTripValue} =
-              this.state
+            const {
+              isTravelAssitanceCheckboxChecked,
+              selectedTripValue,
+            } = this.state
 
             return (
               <form
@@ -751,11 +747,6 @@ class BookNewTrip extends Component {
                     <button
                       type="button"
                       onClick={() => {
-                        const {
-                          yourDetailsEndLocation,
-                          startDateInput,
-                          endDateInput,
-                        } = this.state
                         const trip = {
                           id: v4(),
                           endLocation: yourDetailsEndLocation,
